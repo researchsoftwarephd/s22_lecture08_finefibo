@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finefibo"
+version = "0.0.1"
+description = "Fine Fibonacci numbers!"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["fibonacci", "recursive"]
+license = {text = "MIT"}
+authors = [ { name = "Nuno Fachada", email = "nuno.fachada@ulusofona.pt" } ]
+dependencies = [ "numpy", "pandas" ] # Not really required
+
+[project.scripts]
+pyfibo = "finefibo.fibo:run_from_cli"
